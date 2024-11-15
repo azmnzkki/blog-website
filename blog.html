@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="navbar" class="bg-white shadow-lg fixed w-full top-0 transition-transform duration-300 ease-in-out z-[999]">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="text-2xl font-bold text-gray-800">
+            <img src="images/logo.png" alt="" />
+          </div>
+
+          <div class="hidden md:flex justify-center items-center space-x-6">
+            <a href="index.html" class="text-gray-600 hover:text-[#7C4EE4] transition-all duration-300 ease-in-out">Home</a>
+            <a href="blog.html" class="text-gray-600 hover:text-[#7C4EE4] transition-all duration-300 ease-in-out">Blog</a>
+            <a href="about.html" class="text-gray-600 hover:text-[#7C4EE4] transition-all duration-300 ease-in-out">About</a>
+            <button class="px-3 py-2 bg-[#7C4EE4] rounded-md text-white hover:bg-[#5a39a8] transition-all duration-300 ease-in-out"><a href="contact.html">Contact Us</a></button>
+          </div>
+
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-gray-800 focus:outline-none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0 transition-all duration-300 ease-out">
+        <div class="px-4 pb-4">
+          <a href="index.html" class="block text-gray-600 hover:text-blue-600 py-2">Home</a>
+          <a href="blog.html" class="block text-gray-600 hover:text-blue-600 py-2">Blog</a>
+          <button class="px-3 py-2 bg-[#7C4EE4] rounded-md text-white hover:bg-[#5a39a8] transition-all duration-300 ease-in-out">Contact us</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="mt-32">
+      <!-- container -->
+      <div class="w-full flex flex-col mx-auto">
+        <div class="title w-full md:w-[728px] mx-auto">
+          <h4 class="uppercase font-semibold text-[16px] text-center text-slate-600">our blogs</h4>
+          <h1 class="font-bold text-[32px] md:text-[48px] text-center text-[#333333]">Find our all blogs from here</h1>
+          <p class="text-[16px] text-slate-500 text-center font-sans mt-5">
+            our blogs are written from very research research and well known writers writers so that we can provide you the best blogs and articles articles for you to read them all along
+          </p>
+        </div>
+
+        <div class="blogs w-full flex flex-wrap mt-12 px-8 md:px-10 justify-center items-center gap-6">
+          <div class="blog w-[402px] flex flex-col">
+            <img src="images/blog.png" alt="" />
+
+            <div class="title flex flex-col gap-2">
+              <div class="date flex gap-4 mt-4">
+                <p class="font-bold text-[16px] font-sans">Travel</p>
+                <p class="text-slate-500 text-[16px] font-sans">13 March 2023</p>
+              </div>
+
+              <h3 class="text-[24px] font-bold">Train Or Bus Journey?Which one suits?</h3>
+              <p class="text-[16px] text-slate-500 font-sans">The choice between a train or bus journey depends on various factors such as the distance of the journey, the time available, the cost, and person</p>
+              <a href="" class="font-bold text-[#7C4EE4] font-sans hover:underline hover:underline-offset-2">Read More...</a>
+            </div>
+          </div>
+          <div class="blog w-[402px] flex flex-col">
+            <img src="images/blog.png" alt="" />
+
+            <div class="title flex flex-col gap-2">
+              <div class="date flex gap-4 mt-4">
+                <p class="font-bold text-[16px] font-sans">Travel</p>
+                <p class="text-slate-500 text-[16px] font-sans">13 March 2023</p>
+              </div>
+
+              <h3 class="text-[24px] font-bold">Train Or Bus Journey?Which one suits?</h3>
+              <p class="text-[16px] text-slate-500 font-sans">The choice between a train or bus journey depends on various factors such as the distance of the journey, the time available, the cost, and person</p>
+              <a href="" class="font-bold text-[#7C4EE4] font-sans hover:underline hover:underline-offset-2">Read More...</a>
+            </div>
+          </div>
+
+          <div class="blog w-[402px] flex flex-col">
+            <img src="images/blog.png" alt="" />
+
+            <div class="title flex flex-col gap-2">
+              <div class="date flex gap-4 mt-4">
+                <p class="font-bold text-[16px] font-sans">Travel</p>
+                <p class="text-slate-500 text-[16px] font-sans">13 March 2023</p>
+              </div>
+
+              <h3 class="text-[24px] font-bold">Train Or Bus Journey?Which one suits?</h3>
+              <p class="text-[16px] text-slate-500 font-sans">The choice between a train or bus journey depends on various factors such as the distance of the journey, the time available, the cost, and person</p>
+              <a href="" class="font-bold text-[#7C4EE4] font-sans hover:underline hover:underline-offset-2">Read More...</a>
+            </div>
+          </div>
+          <div class="blog w-[402px] flex flex-col">
+            <img src="images/blog.png" alt="" />
+
+            <div class="title flex flex-col gap-2">
+              <div class="date flex gap-4 mt-4">
+                <p class="font-bold text-[16px] font-sans">Travel</p>
+                <p class="text-slate-500 text-[16px] font-sans">13 March 2023</p>
+              </div>
+
+              <h3 class="text-[24px] font-bold">Train Or Bus Journey?Which one suits?</h3>
+              <p class="text-[16px] text-slate-500 font-sans">The choice between a train or bus journey depends on various factors such as the distance of the journey, the time available, the cost, and person</p>
+              <a href="" class="font-bold text-[#7C4EE4] font-sans hover:underline hover:underline-offset-2">Read More...</a>
+            </div>
+          </div>
+          <div class="blog w-[402px] flex flex-col">
+            <img src="images/blog.png" alt="" />
+
+            <div class="title flex flex-col gap-2">
+              <div class="date flex gap-4 mt-4">
+                <p class="font-bold text-[16px] font-sans">Travel</p>
+                <p class="text-slate-500 text-[16px] font-sans">13 March 2023</p>
+              </div>
+
+              <h3 class="text-[24px] font-bold">Train Or Bus Journey?Which one suits?</h3>
+              <p class="text-[16px] text-slate-500 font-sans">The choice between a train or bus journey depends on various factors such as the distance of the journey, the time available, the cost, and person</p>
+              <a href="" class="font-bold text-[#7C4EE4] font-sans hover:underline hover:underline-offset-2">Read More...</a>
+            </div>
+          </div>
+          <div class="blog w-[402px] flex flex-col">
+            <img src="images/blog.png" alt="" />
+
+            <div class="title flex flex-col gap-2">
+              <div class="date flex gap-4 mt-4">
+                <p class="font-bold text-[16px] font-sans">Travel</p>
+                <p class="text-slate-500 text-[16px] font-sans">13 March 2023</p>
+              </div>
+
+              <h3 class="text-[24px] font-bold">Train Or Bus Journey?Which one suits?</h3>
+              <p class="text-[16px] text-slate-500 font-sans">The choice between a train or bus journey depends on various factors such as the distance of the journey, the time available, the cost, and person</p>
+              <a href="" class="font-bold text-[#7C4EE4] font-sans hover:underline hover:underline-offset-2">Read More...</a>
+            </div>
+          </div>
+          <div class="blog w-[402px] flex flex-col">
+            <img src="images/blog.png" alt="" />
+
+            <div class="title flex flex-col gap-2">
+              <div class="date flex gap-4 mt-4">
+                <p class="font-bold text-[16px] font-sans">Travel</p>
+                <p class="text-slate-500 text-[16px] font-sans">13 March 2023</p>
+              </div>
+
+              <h3 class="text-[24px] font-bold">Train Or Bus Journey?Which one suits?</h3>
+              <p class="text-[16px] text-slate-500 font-sans">The choice between a train or bus journey depends on various factors such as the distance of the journey, the time available, the cost, and person</p>
+              <a href="" class="font-bold text-[#7C4EE4] font-sans hover:underline hover:underline-offset-2">Read More...</a>
+            </div>
+          </div>
+          <div class="blog w-[402px] flex flex-col">
+            <img src="images/blog.png" alt="" />
+
+            <div class="title flex flex-col gap-2">
+              <div class="date flex gap-4 mt-4">
+                <p class="font-bold text-[16px] font-sans">Travel</p>
+                <p class="text-slate-500 text-[16px] font-sans">13 March 2023</p>
+              </div>
+
+              <h3 class="text-[24px] font-bold">Train Or Bus Journey?Which one suits?</h3>
+              <p class="text-[16px] text-slate-500 font-sans">The choice between a train or bus journey depends on various factors such as the distance of the journey, the time available, the cost, and person</p>
+              <a href="" class="font-bold text-[#7C4EE4] font-sans hover:underline hover:underline-offset-2">Read More...</a>
+            </div>
+          </div>
+          <div class="blog w-[402px] flex flex-col">
+            <img src="images/blog.png" alt="" />
+
+            <div class="title flex flex-col gap-2">
+              <div class="date flex gap-4 mt-4">
+                <p class="font-bold text-[16px] font-sans">Travel</p>
+                <p class="text-slate-500 text-[16px] font-sans">13 March 2023</p>
+              </div>
+
+              <h3 class="text-[24px] font-bold">Train Or Bus Journey?Which one suits?</h3>
+              <p class="text-[16px] text-slate-500 font-sans">The choice between a train or bus journey depends on various factors such as the distance of the journey, the time available, the cost, and person</p>
+              <a href="" class="font-bold text-[#7C4EE4] font-sans hover:underline hover:underline-offset-2">Read More...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-24 bg-[#7C4EE4] w-full relative">
+      <!-- decoration -->
+      <div class="absolute -top-6">
+        <img src="images/Mask group.png" alt="" />
+      </div>
+
+      <div class="absolute -bottom-6 right-0 hidden md:block">
+        <img src="images/right.png" alt="" />
+      </div>
+      <!-- container -->
+      <div class="flex flex-col w-full mx-auto py-14 justify-center items-center">
+        <div class="title w-full md:w-[768px] px-6 mt-6 mx-auto">
+          <h2 class="text-center font-bold text-white text-[42px] md:text-[50px]">Get our stories delivered From us to your inbox weekly.</h2>
+        </div>
+
+        <!-- input -->
+        <div class="flex input justify-center items-center gap-4 mt-12 z-[999]">
+          <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden bg-white w-1/2 md:w-[360px]">
+            <input type="email" placeholder="Your Email" class="px-4 py-2 outline-none text-gray-500 bg-gray-50 p-2" />
+          </div>
+          <button class="border border-white text-white px-6 py-2 w-fit hfi font-semibold hover:bg-white hover:text-[#7C4EE4] transition duration-200 rounded-lg">Get started</button>
+        </div>
+
+        <!-- caption -->
+        <div class="caption w-full md:w-[555px] mt-8 px-8">
+          <p class="text-[16px] font-extralight text-white text-center">Get a response tomorrow if you submit by 9pm today. If we received after 9pm will get a reponse the following day.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="w-full mt-12">
+      <!-- container -->
+      <div class="w-full flex flex-col justify-center items-center gap-8 px-0 md:px-14">
+        <div class="logo">
+          <img src="images/logo.png" alt="" />
+        </div>
+
+        <div class="flex gap-8">
+          <a href="index.html" class="hover:text-[#7C4EE4] transition-all duration-300 ease-in-out cursor-pointer">Home</a>
+          <a href="blog.html" class="hover:text-[#7C4EE4] transition-all duration-300 ease-in-out cursor-pointer">Blog</a>
+          <a href="about.html" class="hover:text-[#7C4EE4] transition-all duration-300 ease-in-out cursor-pointer">About</a>
+          <a href="contact.html" class="hover:text-[#7C4EE4] transition-all duration-300 ease-in-out cursor-pointer">Contact Us</a>
+        </div>
+
+        <div class="sosmed flex gap-4">
+          <button class="btn w-[50px] h-[50px] rounded-full font-bold uppercase tracking-widest border border-[#7C4EE4] shadow-lg text-[#7C4EE4] hover:text-white transition-all duration-300 ease-in-out">FB</button>
+          <button class="btn w-[50px] h-[50px] rounded-full font-bold uppercase tracking-widest border border-[#7C4EE4] shadow-lg text-[#7C4EE4] hover:text-white transition-all duration-300 ease-in-out">IG</button>
+          <button class="btn w-[50px] h-[50px] rounded-full font-bold uppercase tracking-widest border border-[#7C4EE4] shadow-lg text-[#7C4EE4] hover:text-white transition-all duration-300 ease-in-out">LN</button>
+          <button class="btn w-[50px] h-[50px] rounded-full font-bold uppercase tracking-widest border border-[#7C4EE4] shadow-lg text-[#7C4EE4] hover:text-white transition-all duration-300 ease-in-out">YT</button>
+        </div>
+
+        <div class="w-full h-[1px] bg-[#7C4EE4] mb-0 md:mb-4"></div>
+
+        <div class="copyright mb-6 px-14">
+          <p class="text-[16px] text-center">Copyright Ideapeel Inc © 2023. All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

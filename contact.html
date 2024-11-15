@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="navbar" class="bg-white shadow-lg fixed w-full top-0 transition-transform duration-300 ease-in-out z-[999]">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="text-2xl font-bold text-gray-800">
+            <img src="images/logo.png" alt="" />
+          </div>
+
+          <div class="hidden md:flex justify-center items-center space-x-6">
+            <a href="index.html" class="text-gray-600 hover:text-[#7C4EE4] transition-all duration-300 ease-in-out">Home</a>
+            <a href="blog.html" class="text-gray-600 hover:text-[#7C4EE4] transition-all duration-300 ease-in-out">Blog</a>
+            <a href="about.html" class="text-gray-600 hover:text-[#7C4EE4] transition-all duration-300 ease-in-out">About</a>
+            <button class="px-3 py-2 bg-[#7C4EE4] rounded-md text-white hover:bg-[#5a39a8] transition-all duration-300 ease-in-out"><a href="contact.html">Contact Us</a></button>
+          </div>
+
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-gray-800 focus:outline-none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0 transition-all duration-300 ease-out">
+        <div class="px-4 pb-4">
+          <a href="index.html" class="block text-gray-600 hover:text-blue-600 py-2">Home</a>
+          <a href="blog.html" class="block text-gray-600 hover:text-blue-600 py-2">Blog</a>
+          <button class="px-3 py-2 bg-[#7C4EE4] rounded-md text-white hover:bg-[#5a39a8] transition-all duration-300 ease-in-out">Contact us</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="mt-32">
+      <!-- container -->
+      <div class="w-full mx-auto">
+        <div class="title mx-auto p-6">
+          <h2 class="text-[48px] font-bold text-center">Get in Touch</h2>
+          <p class="text-slate-500 text-[16px] text-center w-full md:w-[442px] mx-auto">Contact us to publish your content and show ads to our website and get a good reach.</p>
+        </div>
+
+        <!-- card -->
+        <div class="container-card flex flex-wrap justify-center items-center gap-8 mt-12">
+          <div class="card-contact w-[373px] flex flex-col items-center p-6 shadow-lg gap-4">
+            <div class="w-[70px] h-[70px] bg-[#7C4EE4] rounded-full flex justify-center items-center">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22 20.0002V12.1741C22.0001 11.6297 21.889 11.0909 21.6735 10.5909C21.458 10.0909 21.1428 9.64007 20.747 9.26615L13.374 2.29815C13.0027 1.94708 12.511 1.75146 12 1.75146C11.489 1.75146 10.9973 1.94708 10.626 2.29815L3.253 9.26615C2.85722 9.64007 2.54195 10.0909 2.3265 10.5909C2.11104 11.0909 1.99994 11.6297 2 12.1741V20.0002C2 20.5306 2.21071 21.0393 2.58579 21.4144C2.96086 21.7894 3.46957 22.0002 4 22.0002H20C20.5304 22.0002 21.0391 21.7894 21.4142 21.4144C21.7893 21.0393 22 20.5306 22 20.0002Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="text-[#7C4EE4] font-bold">Office</h3>
+            <p class="text-slate-500">Purworejo, Center Java, Indonesia</p>
+          </div>
+
+          <div class="card-email w-[373px] flex flex-col items-center p-6 shadow-lg gap-4">
+            <div class="w-[70px] h-[70px] bg-[#7C4EE4] rounded-full flex justify-center items-center">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2 6C2 5.46957 2.21071 4.96086 2.58579 4.58579C2.96086 4.21071 3.46957 4 4 4H20C20.5304 4 21.0391 4.21071 21.4142 4.58579C21.7893 4.96086 22 5.46957 22 6V18C22 18.5304 21.7893 19.0391 21.4142 19.4142C21.0391 19.7893 20.5304 20 20 20H4C3.46957 20 2.96086 19.7893 2.58579 19.4142C2.21071 19.0391 2 18.5304 2 18V6Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M2 8L9.501 14.001C10.2103 14.5685 11.0916 14.8777 12 14.8777C12.9084 14.8777 13.7897 14.5685 14.499 14.001L22 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="text-[#7C4EE4] font-bold">Email</h3>
+            <p class="text-slate-500">hello@unity.com</p>
+          </div>
+
+          <div class="card-phone w-[373px] flex flex-col items-center p-6 shadow-lg gap-4">
+            <div class="w-[70px] h-[70px] bg-[#7C4EE4] rounded-full flex justify-center items-center">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.5542 6.24003L7.17123 2.33503C6.78123 1.88503 6.06623 1.88703 5.61323 2.34103L2.83123 5.12803C2.00323 5.95703 1.76623 7.18803 2.24523 8.17503C5.10685 14.1 9.88528 18.8851 15.8062 21.755C16.7922 22.234 18.0222 21.997 18.8502 21.168L21.6582 18.355C22.1132 17.9 22.1142 17.181 21.6602 16.791L17.7402 13.426C17.3302 13.074 16.6932 13.12 16.2822 13.532L14.9182 14.898C14.8484 14.9712 14.7565 15.0195 14.6566 15.0354C14.5567 15.0513 14.4543 15.0339 14.3652 14.986C12.1357 13.7021 10.2862 11.8503 9.00523 9.61903C8.95726 9.52978 8.93989 9.42726 8.95578 9.32719C8.97168 9.22711 9.01996 9.13502 9.09323 9.06503L10.4532 7.70403C10.8652 7.29003 10.9102 6.65003 10.5542 6.23903V6.24003Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="text-[#7C4EE4] font-bold">Phone</h3>
+            <p class="text-slate-500">(001) 2342 3451</p>
+          </div>
+        </div>
+
+        <div class="maps w-full mt-24 p-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.8074576674703!2d110.01870287030641!3d-7.70380045929122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7aebbfc80d943f%3A0x878ea669178d3bfd!2sMasjid%20Ar%20Royyan%20Purworejo!5e0!3m2!1sid!2sid!4v1730190225823!5m2!1sid!2sid"
+            class="w-full h-screen"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <form class="w-full mx-auto px-6 md:px-32 mt-12">
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="email"
+              name="floating_email"
+              id="floating_email"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required />
+            <label
+              for="floating_email"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Email address</label
+            >
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="password"
+              name="floating_password"
+              id="floating_password"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required />
+            <label
+              for="floating_password"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Password</label
+            >
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="password"
+              name="repeat_password"
+              id="floating_repeat_password"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required />
+            <label
+              for="floating_repeat_password"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Confirm password</label
+            >
+          </div>
+          <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+              <input
+                type="text"
+                name="floating_first_name"
+                id="floating_first_name"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required />
+              <label
+                for="floating_first_name"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >First name</label
+              >
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+              <input
+                type="text"
+                name="floating_last_name"
+                id="floating_last_name"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required />
+              <label
+                for="floating_last_name"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >Last name</label
+              >
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 md:gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+              <input
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                name="floating_phone"
+                id="floating_phone"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required />
+              <label
+                for="floating_phone"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >Phone number (123-456-7890)</label
+              >
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+              <input
+                type="text"
+                name="floating_company"
+                id="floating_company"
+                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                placeholder=" "
+                required />
+              <label
+                for="floating_company"
+                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >Company (Ex. Google)</label
+              >
+            </div>
+          </div>
+          <button type="submit" class="text-white bg-[#7C4EE4] hover:bg-[#7C4EE4] font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="mt-24 bg-[#7C4EE4] w-full relative">
+      <!-- decoration -->
+      <div class="absolute -top-6">
+        <img src="images/Mask group.png" alt="" />
+      </div>
+
+      <div class="absolute -bottom-6 right-0 hidden md:block">
+        <img src="images/right.png" alt="" />
+      </div>
+      <!-- container -->
+      <div class="flex flex-col w-full mx-auto py-14 justify-center items-center">
+        <div class="title w-full md:w-[768px] px-6 mt-6 mx-auto">
+          <h2 class="text-center font-bold text-white text-[42px] md:text-[50px]">Get our stories delivered From us to your inbox weekly.</h2>
+        </div>
+
+        <!-- input -->
+        <div class="flex input justify-center items-center gap-4 mt-12 z-[999]">
+          <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden bg-white w-1/2 md:w-[360px]">
+            <input type="email" placeholder="Your Email" class="px-4 py-2 outline-none text-gray-500 bg-gray-50 p-2" />
+          </div>
+          <button class="border border-white text-white px-6 py-2 w-fit hfi font-semibold hover:bg-white hover:text-[#7C4EE4] transition duration-200 rounded-lg">Get started</button>
+        </div>
+
+        <!-- caption -->
+        <div class="caption w-full md:w-[555px] mt-8 px-8">
+          <p class="text-[16px] font-extralight text-white text-center">Get a response tomorrow if you submit by 9pm today. If we received after 9pm will get a reponse the following day.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="w-full mt-12">
+      <!-- container -->
+      <div class="w-full flex flex-col justify-center items-center gap-8 px-0 md:px-14">
+        <div class="logo">
+          <img src="images/logo.png" alt="" />
+        </div>
+
+        <div class="flex gap-8">
+          <a href="index.html" class="hover:text-[#7C4EE4] transition-all duration-300 ease-in-out cursor-pointer">Home</a>
+          <a href="blog.html" class="hover:text-[#7C4EE4] transition-all duration-300 ease-in-out cursor-pointer">Blog</a>
+          <a href="about.html" class="hover:text-[#7C4EE4] transition-all duration-300 ease-in-out cursor-pointer">About</a>
+          <a href="contact.html" class="hover:text-[#7C4EE4] transition-all duration-300 ease-in-out cursor-pointer">Contact Us</a>
+        </div>
+
+        <div class="sosmed flex gap-4">
+          <button class="btn w-[50px] h-[50px] rounded-full font-bold uppercase tracking-widest border border-[#7C4EE4] shadow-lg text-[#7C4EE4] hover:text-white transition-all duration-300 ease-in-out">FB</button>
+          <button class="btn w-[50px] h-[50px] rounded-full font-bold uppercase tracking-widest border border-[#7C4EE4] shadow-lg text-[#7C4EE4] hover:text-white transition-all duration-300 ease-in-out">IG</button>
+          <button class="btn w-[50px] h-[50px] rounded-full font-bold uppercase tracking-widest border border-[#7C4EE4] shadow-lg text-[#7C4EE4] hover:text-white transition-all duration-300 ease-in-out">LN</button>
+          <button class="btn w-[50px] h-[50px] rounded-full font-bold uppercase tracking-widest border border-[#7C4EE4] shadow-lg text-[#7C4EE4] hover:text-white transition-all duration-300 ease-in-out">YT</button>
+        </div>
+
+        <div class="w-full h-[1px] bg-[#7C4EE4] mb-0 md:mb-4"></div>
+
+        <div class="copyright mb-6 px-14">
+          <p class="text-[16px] text-center">Copyright Ideapeel Inc © 2023. All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
